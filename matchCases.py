@@ -10,3 +10,5 @@ match x:
 
   case _ if x > 100:
     print("X is Greater than 100")
+  case _:
+    print("X is Positive")
