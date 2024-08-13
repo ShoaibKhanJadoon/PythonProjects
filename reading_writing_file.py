@@ -49,3 +49,13 @@ with open('marks.txt', 'w') as f:
 
 with open("marks.txt", "r") as f:
   print(f.read())
+
+
+with open("myfile.txt", "r") as f:
+  seek = f.seek(10)  #10 character move ahead
+  position = f.tell()  #tell the corrent position
+  data = f.read(5)  #rread next 5 characters
+  print(f"position={position} data={data}")
+with open("marks.txt", "w") as f:
+  f.write("hello world shoaib khan")
+  f.truncate(10)  #delete all other characters only retain first 10 characters
