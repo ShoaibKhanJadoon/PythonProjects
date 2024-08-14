@@ -16,6 +16,6 @@ def rename():
 
 
 if __name__ == "__main__":
-  #create_folder()
+  create_folder()
   #rename()
-  print(dir(os))
+  #print(dir(os))

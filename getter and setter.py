@@ -1,26 +1,26 @@
 class myClass:
 
   def __init__(self, value):
-    self.value = value
+    self.nbr = value
     print(self.value)
 
   def show(self):
-    print(self.value)
+    print(self.nbr)
 
   @property  #getter
-  def getter(self):
-    return self.value
+  def value(self):
+    return self.nbr
 
-  @getter.setter
+  @value.setter  #setter
   def setter(self, value):
-    self.value = value
+    self.nbr = value
 
 
 obj = myClass(10)
 #obj.show()
-print(obj.getter)
+print(obj.value)
 obj.setter = 20
 obj.show()
-print(obj.getter)
+print(obj.value)
 obj.setter = 30
 obj.show()
